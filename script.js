@@ -1,4 +1,6 @@
 const weatherUrl = 'https://api.yr.no/weatherapi/locationforecast/2.0/compact?lat=55.7558&lon=37.6176';
+const weatherContainer = document.getElementById('weather-data');
+
 
 fetch(weatherUrl)
     .then(response => response.json())
